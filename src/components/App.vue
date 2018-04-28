@@ -1,31 +1,49 @@
 <template>
-  <div id="app">
+<div id="app">
     <div class="banner">
-      <img
-        src="https://vuejs.org/images/logo.png"
-        width="100"
-        alt="vue"
-        class="logo"
-      />
-      <h1>Welcome to Vue.js</h1>
+        <img
+            src="https://vuejs.org/images/logo.png"
+            width="100"
+            alt="vue"
+            class="logo"
+            />
+        <h1>Welcome to Vue.js</h1>
     </div>
     <div class="bottom">
-      Hello World !!
-      <br>
-      {{ BRO }}
+        Hello World !!
+        <br>
+        {{ BRO }}
     </div>
-  </div>
+    <home></home>
+    <concept></concept>
+    <contact></contact>
+    <partner></partner>
+
+
+</div>
 </template>
 
 <script>
-  export default {
-    name: 'app',
-    data: function() { 
-      return{
-        BRO: 'on est bon mon bro',
-      }
+    import Home from '../components/home.vue';
+    import Concept from '../components/concept.vue';
+    import Contact from '../components/contact.vue';
+    import Partner from '../components/partner.vue';
+
+    export default {
+        name: 'app',
+        data: function() {
+            return{
+                BRO: 'on est bon mon bro',
+            }
+        },
+
+        components : {
+            Home,
+            Concept,
+            Contact,
+            Partner
+        },
     }
-  }
 </script>
 
 <!-- CSS libraries -->
