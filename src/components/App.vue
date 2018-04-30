@@ -3,8 +3,8 @@
 
     <home></home>
     <concept></concept>
-    <contact></contact>
     <partner></partner>
+    <contact></contact>
 
 </div>
 </template>
@@ -12,8 +12,9 @@
 <script>
     import Home from '../components/home.vue';
     import Concept from '../components/concept.vue';
-    import Contact from '../components/contact.vue';
     import Partner from '../components/partner.vue';
+    import Contact from '../components/contact.vue';
+
 
     export default {
         name: 'app',
@@ -26,8 +27,9 @@
         components : {
             Home,
             Concept,
-            Contact,
-            Partner
+            Partner,
+            Contact
+
         },
     }
 </script>

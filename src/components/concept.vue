@@ -22,7 +22,7 @@
         </div>
         <div class="row_img_bottom_concept">
             <img src="../assets/images/Mall_1_.svg">
-            <img src="../assets/images/Statue_1_.svg">
+            <img class="img_status" src="../assets/images/Statue_1_.svg">
             <img src="../assets/images/Maison_1_1_.svg">
             <img src="../assets/images/Maison_2_1_.svg">
         </div>
@@ -64,6 +64,9 @@
     }
     .row_img_bottom_concept img{
         width: 20%;
+        height: 100%;
+    }
+    .img_status{
         height: 110px;
     }
 </style>

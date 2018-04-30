@@ -3,7 +3,7 @@
         <!--{{ accueil }}-->
         <div class="row_menu_logo">
             <div>1</div>
-            <div>2</div>
+            <div>LOGO</div>
         </div>
 
         <div class="title_section_home">
