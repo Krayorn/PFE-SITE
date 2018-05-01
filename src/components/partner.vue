@@ -102,6 +102,7 @@
         border-radius: 10px;
         padding-left: 15px;
         border-style: solid;
+        font-weight: lighter;
     }
     textarea{
         padding-top: 10px;
