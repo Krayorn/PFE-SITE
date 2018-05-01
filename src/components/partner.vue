@@ -91,6 +91,11 @@
         flex-direction: column;
         margin-bottom: 15px;
     }
+    .flex_form_partner div label{
+        font-family: Helvetica Neue;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
     input[type=text],textarea{
         border-color: #f8c61d;
         height: 38px;
@@ -101,6 +106,7 @@
     textarea{
         padding-top: 10px;
         border: 2px solid #f8c61d;
+        height: 228px;
     }
     input[type=submit]{
         color: #fcfcfc;
@@ -111,5 +117,8 @@
         border-radius: 10px;
         border-style: solid;
         border-color: #f8c61d;
+        font-size: 11px;
+        font-family: "MES Bold";
+        margin-top: 30px;
     }
 </style>
