@@ -2,7 +2,7 @@
     <section class="bg_contact">
         <!--{{ partner }}-->
         <div class="title_partner">
-            DEVENEZ PARTENAIRE
+            CONTACTEZ-NOUS
         </div>
         <div class="flex_form_partner">
             <div>
@@ -57,6 +57,7 @@
         font-size: 20px;
         font-family: "MES Bold";
         margin-bottom: 20px;
+        margin-top: 20px;
         color: #23a4d3;
     }
     .description_partner{
