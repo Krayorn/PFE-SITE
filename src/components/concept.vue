@@ -1,5 +1,5 @@
 <template>
-    <section ref='concept' class="bg_concept">
+    <section ref='concept' id='concept' class="bg_concept">
         <div class="content_concept">
             <div class="description_concept">
                 EXEMPLE est une application qui propose de vous

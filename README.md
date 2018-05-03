@@ -5,7 +5,7 @@ This app was build using `create-vue-app`
 ## Table of Contents
 - [Requirements](#install)
 - [Available Scripts](#available-scripts)
-- [Architecture](#Architecture)
+- [Architecture](#architecture)
 
 ## Install
 

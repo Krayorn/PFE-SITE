@@ -1,5 +1,5 @@
 <template>
-    <section ref='contact' class="bg_contact">
+    <section ref='contact' id='contact' class="bg_contact">
         <!--{{ partner }}-->
         <div class="title_partner">
             CONTACTEZ-NOUS

@@ -1,5 +1,5 @@
 <template>
-    <section ref="partner" class="bg_partner">
+    <section ref='partner' id='partner' class='bg_partner'>
         <!--{{ partner }}-->
         <div class="title_partner">
             DEVENEZ PARTENAIRE
