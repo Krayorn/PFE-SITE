@@ -36,7 +36,6 @@
                 this.scroll = window.scrollY
             },
             getHeight() {
-                console.log('In there', this.$refs)
                 this.homeHeight = this.$refs.home.$refs.home.clientHeight
                 this.conceptHeight = this.homeHeight + this.$refs.concept.$refs.concept.clientHeight
                 this.partnerHeight = this.conceptHeight + this.$refs.partner.$refs.partner.clientHeight
