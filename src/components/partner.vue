@@ -4,39 +4,41 @@
         <div class="title_partner">
             DEVENEZ PARTENAIRE
         </div>
-        <div class="description_partner">
-            Chez EXEMPLE nous sommes ouvert à tout
-            partenariat qui pourrait être intéressant pour
-            les trois parties, vous, nous et nos
-            utilisateurs. Qui que vous soyez si votre savoir
-            faire ou votre activité pourrait participer à
-            compléter ou améliorer EXEMPLE alors
-            n’hésitez pas à nous contacter !<br>
-            Pour plus d’informations sur notre clientèle et
-            les options que nous proposons, remplissez le
-            formulaire et nous rentrerons directement en
-            contact avec vous dans les plus brefs délais !
+        <div class="content_partner">
+            <div class="description_partner">
+                Chez EXEMPLE nous sommes ouvert à tout
+                partenariat qui pourrait être intéressant pour
+                les trois parties, vous, nous et nos
+                utilisateurs. Qui que vous soyez si votre savoir
+                faire ou votre activité pourrait participer à
+                compléter ou améliorer EXEMPLE alors
+                n’hésitez pas à nous contacter !<br>
+                Pour plus d’informations sur notre clientèle et
+                les options que nous proposons, remplissez le
+                formulaire et nous rentrerons directement en
+                contact avec vous dans les plus brefs délais !
 
-        </div>
-        <div class="flex_form_partner">
-            <div>
-                <label>Nom</label>
-                <input type="text" placeholder="placeholder">
             </div>
-            <div>
-                <label>Email</label>
-                <input type="text" placeholder="placeholder">
-            </div>
-            <div>
-                <label>Entreprise</label>
-                <input type="text" placeholder="placeholder">
-            </div>
-            <div>
-                <label>Message</label>
-                <textarea  placeholder="placeholder"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="ENVOYER">
+            <div class="flex_form_partner">
+                <div>
+                    <label>Nom</label>
+                    <input type="text" placeholder="placeholder">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" placeholder="placeholder">
+                </div>
+                <div>
+                    <label>Entreprise</label>
+                    <input type="text" placeholder="placeholder">
+                </div>
+                <div>
+                    <label>Message</label>
+                    <textarea  placeholder="placeholder"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="ENVOYER">
+                </div>
             </div>
         </div>
     </section>
@@ -75,6 +77,10 @@
         font-size: 20px;
         font-family: "MES Bold";
         margin-bottom: 20px;
+    }
+    .content_partner{
+        display: flex;
+        flex-direction: column;
     }
     .description_partner{
         font-size: 15px;
@@ -122,4 +128,39 @@
         font-family: "MES Bold";
         margin-top: 30px;
     }
+
+    @media (min-width: 900px) {
+        .content_partner{
+            width: 78%;
+            flex-direction: row;
+        }
+        /*.title_partner{
+            font-size: 20px;
+            font-family: "MES Bold";
+            margin-bottom: 20px;
+        }*/
+        .description_partner{
+            width: 32%;
+            margin-right: 5%;
+            line-height: 1.6;
+            padding-top: 90px;
+        }
+        .flex_form_partner{
+            width: 50%;
+        }
+        input[type=text], textarea {
+            border-color: inherit;
+            height: 30px;
+            border-radius: 0px;
+            padding-left: 15px;
+            border-style: none;
+            font-weight: lighter;
+        }
+        textarea{
+            border: 0;
+            height: 228px;
+        }
+    }
+
+
 </style>
