@@ -1,5 +1,5 @@
 <template>
-    <section class="bg_home">
+    <section ref='home' class="bg_home">
         <!--{{ accueil }}-->
         <div class="row_menu_logo">
             <div>1</div>

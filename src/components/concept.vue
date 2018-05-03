@@ -1,5 +1,5 @@
 <template>
-    <section class="bg_concept">
+    <section ref='concept' class="bg_concept">
         <!--{{ concept }}-->
         <div class="description_concept">
             EXEMPLE est une application qui propose de vous

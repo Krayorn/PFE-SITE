@@ -1,15 +1,15 @@
 <template>
 <div id="app">
 
-    <home></home>
-    <concept></concept>
-    <partner></partner>
-    <contact></contact>
+    <home ref='home' ></home>
+    <concept ref='concept' ></concept>
+    <partner ref='partner' ></partner>
+    <contact ref='contact' ></contact>
     <div class='nav' >
-        <div v-bind:class="{'active': scroll > 0 && scroll < 500}" >{{scroll}}</div>
-        <div v-bind:class="{'active': scroll > 500 && scroll < 1000}" >{{scroll}}</div>
-        <div v-bind:class="{'active': scroll > 1000 && scroll < 1500}" >{{scroll}}</div>
-        <div v-bind:class="{'active': scroll > 1500 && scroll < 2000}" >{{scroll}}</div>
+        <div v-bind:class="{'active': scroll < homeHeight}" >{{scroll}}</div>
+        <div v-bind:class="{'active': scroll > homeHeight && scroll < conceptHeight}" >{{scroll}}</div>
+        <div v-bind:class="{'active': scroll > conceptHeight && scroll < partnerHeight}" >{{scroll}}</div>
+        <div v-bind:class="{'active': scroll > partnerHeight && scroll < contactHeight}" >{{scroll}}</div>
     </div>
 </div>
 </template>
@@ -25,18 +25,30 @@
         data: () => {
             return{
                 scroll: 0,
+                homeHeight: 0,
+                conceptHeight: 0,
+                partnerHeight: 0,
+                contactHeight: 0
             }
         },
         methods: {
             getWindowScroll(event) {
                 this.scroll = window.scrollY
+            },
+            getHeight() {
+                console.log('In there', this.$refs)
+                this.homeHeight = this.$refs.home.$refs.home.clientHeight
+                this.conceptHeight = this.homeHeight + this.$refs.concept.$refs.concept.clientHeight
+                this.partnerHeight = this.conceptHeight + this.$refs.partner.$refs.partner.clientHeight
+                this.contactHeight = this.partnerHeight + this.$refs.contact.$refs.contact.clientHeight
             }
         },
         mounted() {
             this.$nextTick(function() {
                 window.addEventListener('scroll', this.getWindowScroll)
                 this.getWindowScroll()
-            })
+            }),
+            this.getHeight();
         },
         beforeDestroy() {
             window.removeEventListener('scroll', this.getWindowScroll)
