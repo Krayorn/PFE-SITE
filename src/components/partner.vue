@@ -160,7 +160,21 @@
             border: 0;
             height: 228px;
         }
+        input[type=text]::-webkit-input-placeholder,
+        textarea::-webkit-input-placeholder{ /* WebKit browsers */
+            color: transparent;
+        }
+        input[type=text]:-moz-placeholder,
+        textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: transparent;
+        }
+        input[type=text]::-moz-placeholder,
+        textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: transparent;
+        }
+        input[type=text]:-ms-input-placeholder,
+        textarea:-ms-input-placeholder{ /* Internet Explorer 10+ */
+            color: transparent;
+        }
     }
-
-
 </style>
