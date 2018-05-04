@@ -106,4 +106,11 @@
         font-family: "MES Bold";
         margin-top: 30px;
     }
+
+    @media (min-width: 900px) {
+        .flex_form_partner{
+            width: 57%;
+
+        }
+    }
 </style>
