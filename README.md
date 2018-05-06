@@ -6,6 +6,7 @@ This app was build using `create-vue-app`
 - [Requirements](#install)
 - [Available Scripts](#available-scripts)
 - [Architecture](#architecture)
+- [Packages Installed](#packages-installed)
 
 ## Install
 
@@ -30,7 +31,13 @@ Launch the builded version of the app
 
 ## Architecture
 
-Le site vitrine est architecturée de la manière suivante :
+The website is organised with the following architecture :
 
-* Un dossier __assets__ contentant toutes les images et fonts.
-* Un dossier __components__ contenant tous les composants du site.
+* A folder __assets__ with all images and fonts.
+* A folder __components__ withh all components from the website.
+
+## Packages Installed
+
+| Package name | Usage | Date |
+| --- | --- | --- |
+| vue-smooth-scroll | add smooth scrool on navBar Anchor | 03/05/2018 |
