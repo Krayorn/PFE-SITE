@@ -102,12 +102,12 @@
         color: gold;
     }
     .round {
-        width: 5px;
-        height: 5px;
-        border-radius: 100%;
-        border: 2px solid;
-        margin:auto 5px;
-        color: initial;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            border: 2px solid;
+            margin: 10px 5px;
+            color: initial;
     }
     .active > .round {
         background-color: gold;
