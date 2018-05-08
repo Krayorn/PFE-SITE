@@ -67,7 +67,6 @@
         background-color: #23a4d3;
         color: #fcfcfc;
         padding-bottom: 50px;
-        height: 100vh;
     }
     .content_home{
         display: flex;
@@ -105,6 +104,13 @@
     }
 
     @media (min-width: 900px) {
+        .bg_home{
+            height: 100vh;
+            display: flex;
+        }
+        .row_menu_logo{
+            display: none;
+        }
         .content_home{
             display: none;
         }

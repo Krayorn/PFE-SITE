@@ -82,6 +82,8 @@
     @media (min-width: 900px) {
         .bg_concept{
             height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         .content_concept{
             flex-direction: row;
@@ -104,8 +106,8 @@
         }
         .row_img_bottom_concept{
             width: 75%;
-            /*height: 200px;*/
             margin: auto;
+            margin-bottom: 0;
         }
         .row_img_bottom_concept img{
             width: 15%;
