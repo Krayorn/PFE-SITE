@@ -130,6 +130,9 @@
     }
 
     @media (min-width: 900px) {
+        .bg_partner{
+            height: 100vh;
+        }
         .content_partner{
             width: 78%;
             flex-direction: row;

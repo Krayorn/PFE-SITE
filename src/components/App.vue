@@ -79,7 +79,9 @@
 
 <!-- Global CSS -->
 <style>
-
+    body{
+        height: 100%;
+    }
 </style>
 
 <!-- Scoped component css -->

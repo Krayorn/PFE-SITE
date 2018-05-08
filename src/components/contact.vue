@@ -108,6 +108,10 @@
     }
 
     @media (min-width: 900px) {
+
+        .bg_contact{
+            height: 100vh;
+        }
         .flex_form_partner{
             width: 57%;
         }

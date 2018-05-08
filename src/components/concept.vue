@@ -80,6 +80,9 @@
     }
 
     @media (min-width: 900px) {
+        .bg_concept{
+            height: 100vh;
+        }
         .content_concept{
             flex-direction: row;
             width: 70%;

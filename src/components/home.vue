@@ -7,7 +7,7 @@
         </div>
         <div class="content_home">
             <div class="title_section_home">
-                Laissez vous guidez le temps
+                Laissez vous guider le temps
                 d’une promenade
             </div>
 
@@ -67,6 +67,7 @@
         background-color: #23a4d3;
         color: #fcfcfc;
         padding-bottom: 50px;
+        height: 100vh;
     }
     .content_home{
         display: flex;
