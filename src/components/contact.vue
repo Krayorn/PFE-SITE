@@ -4,32 +4,45 @@
         <div class="title_partner">
             CONTACTEZ-NOUS
         </div>
-        <div class="flex_form_partner">
+        <div v-if="res" >
+            {{res}}
+        </div>
+        <form v-on:submit.prevent='submitContact' class="flex_form_partner">
             <div>
                 <label>Nom</label>
-                <input type="text" placeholder="placeholder">
+                <input v-model="name" type="text" placeholder="placeholder">
             </div>
             <div>
                 <label>Email</label>
-                <input type="text" placeholder="placeholder">
+                <input v-model="email" type="text" placeholder="placeholder">
             </div>
             <div>
                 <label>Message</label>
-                <textarea  placeholder="placeholder"></textarea>
+                <textarea v-model="message" placeholder="placeholder"></textarea>
             </div>
             <div>
                 <input type="submit" value="ENVOYER">
             </div>
-        </div>
+        </form>
     </section>
 </template>
 
 <script>
+
+    import { restPost } from '../services/api'
+
     export default {
         name: 'contact',
-        data: function() {
-            return{
-                concept: 'Ici c\'est le contact',
+        data: () => ({
+            name: '',
+            email: '',
+            message: '',
+            res: ''
+        }),
+        methods: {
+            submitContact(e) {
+                restPost('/contact', {name: this.name, email: this.email, message: this.message})
+                .then(res => this.res = res.response)
             }
         }
     }

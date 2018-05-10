@@ -19,37 +19,53 @@
                 contact avec vous dans les plus brefs délais !
 
             </div>
-            <div class="flex_form_partner">
+
+            <div v-if="res" >
+                {{res}}
+            </div>
+
+            <form v-on:submit.prevent='submitPartner' class="flex_form_partner">
                 <div>
                     <label>Nom</label>
-                    <input type="text" placeholder="placeholder">
+                    <input v-model="name" type="text" placeholder="placeholder">
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="text" placeholder="placeholder">
+                    <input v-model="email" type="text" placeholder="placeholder">
                 </div>
                 <div>
                     <label>Entreprise</label>
-                    <input type="text" placeholder="placeholder">
+                    <input v-model="firm" type="text" placeholder="placeholder">
                 </div>
                 <div>
                     <label>Message</label>
-                    <textarea  placeholder="placeholder"></textarea>
+                    <textarea v-model="message" placeholder="placeholder"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="ENVOYER">
                 </div>
-            </div>
+            </form>
         </div>
     </section>
 </template>
 
 <script>
+
+    import { restPost } from '../services/api'
+
     export default {
         name: 'partner',
-        data: function() {
-            return{
-                partner: 'Ici c\'est le partner',
+        data: () => ({
+            name: '',
+            email: '',
+            firm: '',
+            message: '',
+            res: ''
+        }),
+        methods: {
+            submitPartner(e) {
+                restPost('/partner', {name: this.name, email: this.email, firm: this.firm, message: this.message})
+                .then(res => this.res = res.response)
             }
         }
     }
