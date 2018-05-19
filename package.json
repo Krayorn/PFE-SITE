@@ -1,15 +1,14 @@
 {
   "private": true,
-  "name": "Website",
+  "name": "pfe-2019",
   "productName": "Website",
   "description": "website of our PFE2019",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "poi",
-    "build": "poi build",
-    "report": "poi build --bundle-report",
-    "serve": "serve dist --single"
+    "dev": "poi",
+    "build": "poi build --env.API_URL=https://pfe-2019-api.herokuapp.com ",
+    "report": "poi build --bundle-report"
   },
   "author": {
     "name": "remy peyre",
@@ -18,7 +17,8 @@
   "dependencies": {
     "normalize.css": "^7.0.0",
     "object-assign": "^4.1.1",
-    "promise-polyfill": "^6.0.2"
+    "promise-polyfill": "^6.0.2",
+    "vue-smooth-scroll": "^1.0.13"
   },
   "devDependencies": {
     "poi": "^9.0.0",
