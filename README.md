@@ -2,6 +2,9 @@
 
 This app was build using `create-vue-app`
 
+The test url is [here](https://pfe-2018.herokuapp.com/).
+The github is accessible at this [url](https://github.com/Krayorn/PFE-SITE).
+
 ## Table of Contents
 - [Requirements](#install)
 - [Available Scripts](#available-scripts)
@@ -34,7 +37,8 @@ Launch the builded version of the app
 The website is organised with the following architecture :
 
 * A folder __assets__ with all images and fonts.
-* A folder __components__ withh all components from the website.
+* A folder __components__ with all components from the website.
+* A folder __services__ with all the services the website use.
 
 ## Packages Installed
 
