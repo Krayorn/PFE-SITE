@@ -1,7 +1,16 @@
 <template>
     <section ref='concept' id='concept' class="bg_concept">
         <div class="content_concept">
-            <div class="description_concept">
+            <div class="description_concept_mobile">
+                EXEMPLE est une application qui propose de vous
+                faire découvrir de nouveaux endroits, de diversifier
+                vos sorties et de les partager.<br>
+                Qui et où que vous soyez, seul ou accompagné,
+                EXEMPLE et sa communauté vous offrent des
+                balades plus différentes les une que les autres
+                pour répondre à vos envies.<br>
+            </div>
+            <div class="description_concept_desktop">
                 EXEMPLE est une application qui propose de vous
                 faire découvrir de nouveaux endroits, de diversifier
                 vos sorties et de les partager.<br>
@@ -53,10 +62,13 @@
         display: flex;
         flex-direction: column;
     }
-    .description_concept{
-        font-size: 15px;
+    .description_concept_mobile{
+        font-size: 16px;
         font-family: Helvetica Neue;
-        padding: 20px 20px;
+        padding: 35px 20px;
+    }
+    .description_concept_desktop{
+        display: none;
     }
     .flex_display_iphone{
         display: flex;
@@ -92,14 +104,21 @@
             margin: auto;
             padding-top: 75px;
         }
-        .description_concept{
+        .description_concept_mobile{
+            display: none;
+        }
+        .description_concept_desktop{
+            display: flex;
             width: 52%;
             font-family: "Helvetica Neue";
             font-weight: lighter;
             line-height: 1.5;
+            font-size: 15px;
+            padding: 20px 20px;
         }
         .flex_display_iphone{
             padding-bottom: 0;
+            margin-left: 80px;
         }
         .first_picture{
             display: flex;

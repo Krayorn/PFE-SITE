@@ -23,7 +23,7 @@
         <div class="content_home_desktop">
             <div>
                 <div class="title_section_home">
-                    Laissez vous guidez le temps
+                    Laissez vous guider le temps
                     d’une promenade
                 </div>
                 <div class="btn_home">
@@ -80,6 +80,7 @@
         font-size: 25px;
         text-align: center;
         font-family: "MES Bold";
+        padding: 0 15px 15px 15px;
     }
     .flex_display_gif{
         display: flex;
@@ -90,7 +91,7 @@
         width: 80%;
     }
     .btn_home{
-        width: 193px;
+        width: 205px;
         height: 50px;
         display: flex;
         justify-content: center;
@@ -101,6 +102,7 @@
         margin: auto;
         font-family: "MES Bold";
         font-size: 16px;
+        box-shadow: 5px 5px 0px 0px rgb(128, 128, 128);
     }
 
     @media (min-width: 900px) {
@@ -119,6 +121,9 @@
             width: 70%;
             margin: auto;
             align-items: center;
+        }
+        .size_gif{
+            width: 70%;
         }
         .btn_home{
             margin-top: 55px;
