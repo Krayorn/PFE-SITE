@@ -172,10 +172,11 @@
         input[type=text], textarea {
             border-color: inherit;
             height: 30px;
-            border-radius: 0px;
+            /*border-radius: 0px;*/
             padding-left: 15px;
             border-style: none;
             font-weight: lighter;
+            border-radius: 10px;
         }
         textarea{
             border: 0;
