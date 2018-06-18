@@ -8,19 +8,19 @@
     <div class='nav' >
         <div class='nav-item' v-bind:class="{'active': scroll < homeHeight}" >
             <!-- <span class='title' >Acceuil</span> -->
-            <a v-smooth-scroll href='#home' class='round' />
+            <a v-smooth-scroll href='#home' class='round' />ACCUEIL
         </div>
         <div class='nav-item' v-bind:class="{'active': scroll >= homeHeight && scroll < conceptHeight}" >
             <!-- <span class='title' >Concept</span> -->
-            <a v-smooth-scroll href='#concept' class='round' />
+            <a v-smooth-scroll href='#concept' class='round' />CONCEPT
         </div>
         <div class='nav-item' v-bind:class="{'active': scroll >= conceptHeight && scroll < partnerHeight}" >
             <!-- <span class='title' >Partenaire</span> -->
-            <a v-smooth-scroll href='#partner' class='round' />
+            <a v-smooth-scroll href='#partner' class='round' />PARTNER
         </div>
         <div class='nav-item' v-bind:class="{'active': scroll >= partnerHeight && scroll < contactHeight}" >
             <!-- <span class='title' >Contact</span> -->
-            <a v-smooth-scroll href='#contact' class='round' />
+            <a v-smooth-scroll href='#contact' class='round' />CONTACT
         </div>
     </div>
 </div>
@@ -86,33 +86,43 @@
 <!-- Scoped component css -->
 <!-- It only affect current component -->
 <style scoped>
-    .nav {
-        position: fixed;
-        right: 0%;
-        top: 40%;
-        height: 20%;
-    }
-    .nav-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 10px;
-    }
-    .active {
-        transition: 0.5s;
-        color: gold;
-    }
-    .round {
-            width: 8px;
-            height: 8px;
+
+    @media (min-width: 900px) {
+        .nav {
+            position: fixed;
+            right: 0%;
+            top: 40%;
+            height: 20%;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px;
+            font-family: "Helvetica Neue";
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .active {
+            transition: 0.5s;
+            color: #f8c61d;
+        }
+
+        .round {
+            width: 9.5px;
+            height: 9.5px;
             border-radius: 100%;
             border: 2px solid;
             margin: 10px 5px;
             color: initial;
-    }
-    .active > .round {
-        background-color: gold;
-        box-shadow: 0px 0px 1px 1px gold;
-        border-color: gold;
+        }
+
+        .active > .round {
+            background-color: #f8c61d;
+            box-shadow: 0px 0px 1px 1px #f8c61d;
+            border-color: #f8c61d;
+        }
     }
 </style>

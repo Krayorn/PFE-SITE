@@ -125,11 +125,12 @@
         padding-left: 15px;
         border-style: solid;
         font-weight: lighter;
+        box-shadow: 5px 5px 0px 0px rgb(128, 128, 128);
     }
     textarea{
         padding-top: 10px;
         border: 2px solid #f8c61d;
-        height: 228px;
+        height: 130px;
     }
     input[type=submit]{
         color: #fcfcfc;
@@ -143,6 +144,7 @@
         font-size: 11px;
         font-family: "MES Bold";
         margin-top: 30px;
+        box-shadow: 5px 5px 0px 0px rgb(128, 128, 128);
     }
 
     @media (min-width: 900px) {
@@ -170,10 +172,11 @@
         input[type=text], textarea {
             border-color: inherit;
             height: 30px;
-            border-radius: 0px;
+            /*border-radius: 0px;*/
             padding-left: 15px;
             border-style: none;
             font-weight: lighter;
+            border-radius: 10px;
         }
         textarea{
             border: 0;
