@@ -1,19 +1,11 @@
 <template>
-<div id="app">
+    <div id="app">
+        {{BRO}}
 
-    <home></home>
-    <concept></concept>
-    <contact></contact>
-    <partner></partner>
-
-</div>
+    </div>
 </template>
 
 <script>
-    import Home from '../components/home.vue';
-    import Concept from '../components/concept.vue';
-    import Contact from '../components/contact.vue';
-    import Partner from '../components/partner.vue';
 
     export default {
         name: 'app',
@@ -23,12 +15,6 @@
             }
         },
 
-        components : {
-            Home,
-            Concept,
-            Contact,
-            Partner
-        },
     }
 </script>
 
